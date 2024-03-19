@@ -1,0 +1,284 @@
+.sectionPricing{
+    padding: 7% 10%;
+    background-color: rgba(232, 232, 232, 0.162);
+}
+
+.sectionPricing .pricingContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.pricingContainer .price{
+    padding: 5% 4%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.price h2{
+    text-align: center;
+}
+
+.price .priceIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.price .priceIcon .cercle0{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #d2eeeb;
+}
+
+.price .priceIcon .cercle{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #87c1bb;
+}
+
+.price .priceIcon .cercle1{
+    padding: 15px;
+    border-radius: 50%;
+    background: var(--vert);
+    color: white;
+}
+
+.price .titrePan{
+    text-align: center;
+}
+
+.price .titrePan span{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.price .price1{
+    margin-top: 20px;
+}
+
+.price .price1 .prices{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.price .price1 .prices .icon i{
+    color: var(--vert);
+    margin-right: 5px;
+}
+
+.price .price2 .prices {
+    display: flex;
+    margin-top: 10px;
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 15px;
+    text-decoration: line-through;
+}
+
+.price .price2 .prices .icon i {
+    margin-right: 5px;
+}
+
+.price .boutonPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.price .boutonPrice button{
+    width: 60%;
+    padding: 10px 35px;
+    background: white;
+    color: var(--vert);
+    font-weight: bold;
+    border: 1px solid var(--vert);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.pricingContainer .central{
+    position: relative;
+    top: 30px;
+    border: 2px solid var(--vert);
+}
+
+
+@media(max-width: 1000px){
+    .sectionPricing .pricingContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .pricingContainer .price {
+        margin-bottom: 4%;
+    }
+
+    .pricingContainer .price .price1 .prices{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricingContainer .price .price2 .prices{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricingContainer .central{
+        top: 0;
+    }
+}
+
+
+
+
+
+/* .sectionPricing{
+    padding: 3% 10%;
+    border: 1px solid red;
+}
+
+.cont-grid-flex-2{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(99, 21, 21);
+}
+button{
+    color: #008374;
+    background-color: rgb(254, 252, 252);
+    border-radius: 15px;
+    border-color: #008374;
+    width: 110px;
+    justify-content: center;
+    margin: 20px;
+}
+.divBP{
+    border: solid #008374;
+    border-radius: 4%;
+    height: max-content;
+    box-shadow: 0px 1px 1px;
+    margin: 12px;
+}
+
+#ptxt{
+    font-size: 15px;
+    color: grey;
+}
+
+#ptxt:hover{
+    color: white;
+}
+
+.divblusha{
+    background-color: #008374;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px;
+
+}
+.bi-box{
+    color: white;
+    font-size: 35px;
+    margin: 7px;
+    text-align:center
+}
+
+.bi-airplane-fill{
+    color: white;
+    font-size: 35px;
+    margin: 7px;
+    text-align:center
+}
+
+.bi-send-fill{
+    color: white;
+    font-size: 35px;
+    margin: 7px;
+    text-align:center
+}
+
+.divFP, .divDP{
+    border-radius: 4%;
+    box-shadow: 0px 1px 1px;
+    margin: 12px;
+    height: 300px  ;
+    padding: 8px;
+}
+
+
+.divFP:hover{
+    background-color: #008374;
+    color: white;
+    transform: scale(1.1);
+}
+
+.divBP:hover{
+    background-color: #008374;
+    color: white;
+    transform: scale(1.1);
+}
+
+.divDP:hover{
+        background-color: #008374;
+        color: white;
+        transform: scale(1.1);
+}
+
+.titrPan{
+    color:#F85A40;
+}
+.bi-check{
+    color: green;
+}
+
+#abarer{
+    text-decoration: line-through;
+}
+
+
+@media(max-width=700px) {
+    .cont-grid-flex-2{
+    padding-top: 25px;
+    grid-template-columns:1fr;
+    flex-wrap: wrap;
+}
+}
+@media(max-width=1000px){
+    .cont-grid-flex-2{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        grid-template-columns: 1fr 2fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+}
+
+}
+
+#liste-item1 
+{
+   
+    display: flex;
+    flex-direction: column;
+}
+
+#liste-item1 li 
+{
+    list-style-type: none;
+    padding-bottom: 10px;
+    
+} */

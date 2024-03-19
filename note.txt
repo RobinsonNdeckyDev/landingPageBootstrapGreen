@@ -1,0 +1,27 @@
+ <!-- <div class="divBP">
+                    <h2>Business plan</h2>
+                    <div class="divblusha"><i class="bi bi-airplane-fill"></i>
+                    </div>
+                    <h3 class="titrPan">
+                        </h3class>29 $ /month</h3>
+                    <p id="ptxt"><i class="bi bi-check"></i>Quam adipiscing vitae proin<br>
+                        <span><i class="bi bi-check"></i>NEC feugiat nisl pretium</span><br>
+                        <span><i class="bi bi-check"></i>Nulla à volutpat diam uteera</span><br>
+                        <span><i class="bi bi-check"></i>Pharetra massa massa ultricies</span><br>
+                        <span><i class="bi bi-check"></i>Massa ultricies mi quis hendrerit</pan>
+                    </p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="divDP">
+                    <h2>Developer plan</h2>
+                    <div class="divblusha"><i class="bi bi-send-fill"></i>
+                    </div>
+                    <h3 class="titrPan">0 $ /month</h3>
+                    <p id="ptxt"><i class="bi bi-check"></i>Quam adipiscing vitae proin<br>
+                        <span><i class="bi bi-check"></i>NEC feugiat nisl pretium</span><br>
+                        <span><i class="bi bi-check"></i>Nulla à volutpat diam uteera</span><br>
+                        <span><i class="bi bi-check"></i>Pharetra massa massa ultricies</span><br>
+                        <span><i class="bi bi-check"></i>Massa ultricies mi quis hendrerit</pan>
+                    </p>
+                    <button>Buy Now</button>
+                </div> -->

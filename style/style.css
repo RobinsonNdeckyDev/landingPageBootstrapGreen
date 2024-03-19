@@ -1,0 +1,30 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 70px;
+    scroll-snap-align: start;
+    opacity: 1;
+    transition: opacity 1s easeInOut 5s;
+}
+
+
+:root{
+    --vert: #008374;
+    --orange: #f85a40;
+    --blanc: #ffffff;
+    --noir: #000000;
+    --couleur-texte:  #6a7284;
+    --texte-read-more:  #6fb0a4;
+    --couleur-icone:  #a2a2a2;
+
+    --font-menu: Roboto Bold Roboto Thin Roboto Slab Roboto Light Roboto Black;
+}
+
+body header{
+    font-family: Montserrat, sans-serif;
+}
+
+body header a{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+}

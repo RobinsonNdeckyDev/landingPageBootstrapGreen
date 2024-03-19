@@ -1,0 +1,211 @@
+.contentContact{
+    padding: 2% 10%;
+    background: rgba(128, 128, 128, 0.108);
+
+}
+
+.contentContact hr{
+    border: 3px solid var(--vert);
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+.contentContact .ptCont{
+    text-align: center;
+    margin-bottom: 2%;
+    color: var(--couleur-texte);
+}
+
+.contentContact .contactContainer{
+    display: flex;
+    background-color: white;
+}
+
+.contactContainer .coordonnees{
+    width: 30%;
+    padding: 1%;
+    background: var(--vert);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coordonnees .coods{
+    display: flex;
+    padding: 4%;
+    /* margin-bottom: 20px; */
+    background-color: rgba(240, 255, 255, 0.134);
+    border-radius: 15px;
+}
+
+.coordonnees .coods:hover{
+    transform: scale(0.9);
+}
+
+.coordonnees .coods .icon span{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(240, 255, 255, 0.205);
+}
+
+.coordonnees .coods .icon span i{
+    font-size: 25px;
+}
+
+.coordonnees .coods .textCo{
+   padding-left: 3%;
+   padding-top: 3%;
+   color: var(--blanc);
+}
+
+.coordonnees .coods .textCo .itemTxt{
+    font-size: 13px;
+}
+
+.coordonnees .coods .textCo .item{
+    font-weight: bold;
+}
+
+.contactContainer .formul{
+    border: 2px solid black;
+    width: 70%;
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+.formul .formI1{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.formul .formI1 input {
+    width: 380px;
+    padding: 15px 1px;
+}
+
+.formul .Subject input, .message textarea{
+    width: 100%;
+}
+
+
+
+.formul .Subject,.message{
+    margin-bottom: 2%;
+}
+
+.formul .Subject input{
+    padding: 14px 10px;
+    width: 97%;
+}
+
+.formul .message textarea{
+    height: 100px;
+    padding: 10px 15px;
+    width: 96%;
+}
+
+.formul .bouton{
+    display: flex;
+    justify-content: center;
+}
+
+.formul button{
+    width: 60%;
+    padding: 15px 20px;
+    background: var(--vert);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+
+@media(min-width: 300px) and (max-width: 1000px){
+
+    .contentContact {
+        padding: 2% 5%;
+        background: rgba(128, 128, 128, 0.108);
+        border: 1px solid rgb(12, 4, 61);
+    }
+
+    .contactContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactContainer .coordonnees{
+        width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+        /* border: 5px solid hotpink; */
+    }
+
+    .contactContainer .coordonnees .coods{
+        margin-bottom: 15px;
+    }
+
+    .contactContainer .formul {
+        width: 90%;
+        /* padding: 15px; */
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .formul .formI1 {
+        overflow: hidden;
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .formul input{
+        border: 1px solid rgb(3, 3, 3);
+    }
+
+    .formul .formI1 input {
+        width: 96%;
+        padding: 15px 1px;
+        margin-bottom: 4%;
+        padding-left: 10px;
+    }
+
+    .formul .Subject input,
+    .message textarea {
+        width: 92%;
+        padding: 10px 15px;
+        overflow: hidden;
+    }
+
+    .formul .Subject input {
+        margin-bottom: 4%;
+    }
+
+    .formul .message textarea {
+        height: 100px;
+    }
+    
+    /* .formul .formI1 input {
+        width: 98%;
+        padding: 15px 1px;
+        margin-bottom: 15px;
+    }
+
+    
+    
+    .formul .message textarea {
+       
+    }
+
+    .formul .bouton button{
+        width: 90%;
+    } */
+}

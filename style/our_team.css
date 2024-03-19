@@ -1,0 +1,88 @@
+
+.ourTeam{
+    width: 75%;
+    justify-content:center;
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.Oteam{
+
+    text-align: center;
+}
+
+.Oteam2{
+    text-align: center;
+}
+
+.conteneur-grid-flex{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+}
+.divContOurTeam{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+    row-gap: 35px; */
+}
+    
+#imgteam{
+    width: 250px;
+}
+.hrteam{
+    border-color:#008374 ;
+    width: 45px;
+}
+
+.divWalter{
+    background-color:#C8C8C8;
+    border-radius: 10%;
+}
+.divSara{
+    background-color:#C8C8C8;
+    border-radius: 10%;
+}
+.divAnder{
+    background-color:#C8C8C8;
+    border-radius: 10%;
+}
+.divAmanda{
+    background-color:#C8C8C8;
+    border-radius: 10%;
+}
+
+/* la responsivité */
+
+@media (max-width: 1000px){
+    .divContOurTeam{
+    grid-template-columns: 1fr;
+    gap: 35px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    .divContOurTeam{
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+
+    }
+}
+
+
+@media (max-width: 400px){
+    .ourTeam{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+}
+}

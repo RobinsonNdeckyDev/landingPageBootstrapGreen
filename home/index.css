@@ -1,0 +1,619 @@
+
+
+/* pour tous */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Section header */
+
+/* section menu */
+header{
+    background-color: var(--vert);
+    padding-bottom: 4%;
+}
+
+/* Style navigation */
+
+header .navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--vert);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+}
+
+header .navContainer ul{
+    display: flex;
+    width: 50%;
+}
+
+header nav .logo{
+    width: 50%;
+}
+
+
+header .navContainer .boutonTog i{
+    color: var(--blanc);
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+}
+
+
+header nav .logo a{
+    /* border: 1px solid black; */
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+header nav .logo h2{
+    font-size: 30px;
+}
+
+header nav .logo h2::first-letter{
+    text-transform: uppercase;
+}
+
+header nav .logo i{
+    font-size: 5px;
+    margin-left: 2px;
+    color: var(--orange);
+}
+
+header .navMenu .menu li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+header .menu li a{
+    text-decoration: none;
+    color: #a2a2a2c5;
+    font-size: 13px;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+header .menu li a:hover{
+    color: var(--blanc);
+    text-decoration: underline 2px solid var(--orange);
+}
+
+header .menu li .active{
+    text-decoration: underline 2px var(--orange);
+    color: var(--blanc);
+}
+
+header .dropMenu{
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 50px;
+    width: 80%;
+    height: 0;
+    background-color: var(--orange);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+header .dropMenu.open{
+    height: 320px;
+}
+
+header .dropMenu li{
+    list-style-type: none;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .dropMenu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+header .dropMenu li:hover{
+    text-decoration: underline 3px var(--vert);
+}
+
+header .dropMenu li .active{
+    text-decoration: underline 3px var(--vert);
+}
+
+
+/* Menu container */
+
+header .menuContainer {
+    margin-top: 40px;
+}
+
+header .menuContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header .menuContainer .descript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+}
+
+header .menuContainer .descript h1{
+    margin-bottom: 3%;
+    color: var(--blanc);
+}
+
+header .menuContainer .descript p{
+    color: #44aca9;
+    font-size: 14px;
+}
+
+header .menuContainer .descript .boutons{
+    display: flex;
+    margin-top: 3%;
+}
+
+header .menuContainer .descript .boutons a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+
+header .menuContainer .descript .started button{
+    background-color: #1a9082;
+    margin-right: 30px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid #229486 !important;
+    color: var(--blanc);
+    font-size: 18px;
+}
+
+header .menuContainer .descript .watch button {
+    background-color: var(--vert);
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid #229486 !important;
+    font-weight: bold;
+    color: var(--blanc);
+    font-size: 18px;
+
+}
+
+header .menuContainer .descript .watch button i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+header .menuContainer .imgContent img{
+    width: 100%;
+}
+
+
+/* main */
+
+/* Menu card */
+
+.sectionCartes{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main .menuCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    gap: 80px;
+    bottom: 90px;
+}
+
+main .menuCard .card{
+    padding: 15%;
+    border-radius: 10px;
+    background-color: #008d7d;
+}
+
+main .menuCard .card:hover{
+    color: #1a9082;
+    -moz-transform: scale(1.1) translate(1px, 0px);
+    -webkit-transform: scale(1.1) translate(1px, 0px);
+    -o-transform: scale(1.1) translate(1px, 0px);
+    -ms-transform: scale(1.1) translate(1px, 0px);
+    transform: scale(1.1) translate(1px, 0px);
+    background-color: #1a9082bc;
+}
+
+main .menuCard .card p,h4{
+   text-align: center;
+}
+
+main .menuCard .card .p-icon i{
+    font-size: 50px;
+}
+
+main .menuCard .card a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--blanc);
+}
+
+/* section A propos */
+
+main .containerPropos{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main .secton-propos{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main .props{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+main .left-propos h1{
+    margin-bottom: 2%;
+}
+
+main .props .right-propos img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+
+main .props .left-propos img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+
+main .props .left-propos p{
+    color: var(--couleur-texte);
+}
+
+main .props .right-propos p{
+    color: var(--couleur-texte);
+}
+
+main .props .right-propos i{
+    color: var(--vert);
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+main .right-propos iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+main .T2{
+    text-align: center;
+    font-size: 20px;
+    color: var(--vert);
+   margin-bottom: 2%;
+}
+
+/* section service */
+
+.section-services{
+    background-color: #eeeeee;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 20px;
+}
+
+.container-servs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    row-gap: 40px;
+    padding: 3% 10%;
+}
+
+.container-servs .service{
+    padding: 8%;
+    background-color: white;
+    border-radius: 12px;
+    
+}
+
+.container-servs .service:hover{
+    color: #44aca9;
+    -moz-transform: scale(1.1) translate(1px, 0px);
+    -webkit-transform: scale(1.1) translate(1px, 0px);
+    -o-transform: scale(1.1) translate(1px, 0px);
+    -ms-transform: scale(1.1) translate(1px, 0px);
+    transform: scale(1.1) translate(1px, 0px);
+}
+
+.container-servs .service h3{
+    font-size: 20px;
+    padding-bottom: 3%;
+}
+
+.container-servs .service p{
+    color: var(--couleur-texte);
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
+.container-servs .service button{
+    background-color: white;
+    border: none;
+}
+
+.container-servs .service button a{
+    text-decoration: none;
+    color: var(--vert);
+    font-size: 16px;
+}
+
+.container-servs .service button i{
+    margin-left: 5px;
+}
+
+.container-servs .service .titre{
+    border-bottom: 4px solid var(--couleur-texte);
+    padding-bottom: 1%;
+}
+
+.container-servs .service .rond{
+    width: 40px;
+    height: 40px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    /* margin-bottom: 10%; */
+}
+
+.container-servs .service .iconi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}
+
+.container-servs .service i{
+    font-size: 25px;
+}
+
+.container-servs .service:hover .titre .rond{
+    color: var(--vert);
+}
+
+.icones{
+    margin-top: 2%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.icones span{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.icones span i{
+    font-size: 25px;
+}
+
+#blog p{
+    text-align: center;
+    color: var(--couleur-texte);
+    margin-bottom: 2%;
+}
+
+#blog hr{
+    width: 25px;
+    border: 3px solid var(--vert);
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+#portfolio{
+    padding-bottom: 20px;
+}
+/* footer */
+
+footer {
+    padding: 3% 10%;
+    background-color: var(--vert);
+    /* margin-top: 40px; */
+}
+
+footer .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+footer .foot1 h2 {
+    color: var(--blanc);
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: Montserrat;
+}
+
+footer .foot1 {
+    color: rgba(255, 255, 255, 0.688);
+}
+
+footer .foot2 h2 {
+    color: var(--blanc);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer .footerContainer .foot2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 18px;
+}
+
+footer .footerContainer .foot2 ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+footer .footerContainer .foot2 ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.814);
+}
+
+footer .footerContainer .foot2 .foot2Content p {
+    color: var(--blanc);
+    font-size: 16px;
+}
+
+footer .foot2Content .adress {
+    margin-bottom: 20%;
+}
+
+footer .foot2Content span {
+    font-weight: bold;
+}
+
+footer .copy {
+    margin-top: 5%;
+}
+
+footer .copy p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.492);
+}
+
+
+
+/* Media screen */
+@media (max-width: 700px){
+    header nav{
+        display: none;
+    }
+
+    header .navContainer .boutonTog i{
+        display: block;
+    }
+
+    header .navContainer ul{
+        display: none;
+    }
+
+        header .menuContainer {
+            padding-top: 100px;
+        }
+    
+
+    /* section Team */
+    .conteneurTeam {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1000px){
+    header {
+            background-color: var(--vert);
+            padding-bottom: 4%;
+        }
+
+    header .menuContainer{
+        padding-top: 100px;
+    }
+
+    header nav .menu{
+        display: none;
+    }
+
+    header .navContainer .navMenu ul {
+        display: none;
+    }
+
+    header .navContainer .boutonTog i {
+        display: block;
+    }
+
+    header .descript h1{
+        text-align: center;
+    }
+
+    header .menuContainer .descript .boutons {
+        display: block;
+        margin-top: 3%;
+    }
+
+    header .menuContainer .descript .boutons button{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    header .dropMenu {
+        display: block;
+        z-index: 1;
+    }
+
+    main .menuCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        gap: 80px;
+        bottom: 90px;
+    }
+
+    main .props {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .container-servs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        row-gap: 40px;
+        padding: 3% 10%;
+    }
+
+    footer .footerContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    footer .footerContainer .foot2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        font-size: 18px;
+    }
+}
